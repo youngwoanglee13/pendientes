@@ -1,15 +1,14 @@
-import sumar from "./sumador";
+//import sumar from "./sumador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
-
+const descripcion = document.getElementById("#idDescripcion");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  alert("Descipcion esta vacia");
+  if(descripcion.value.lenght >0){
+    
+    
+  }else{
+    alert("No es posible registrar una tarea pendiente sin descripción”");
+  }
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
 });
